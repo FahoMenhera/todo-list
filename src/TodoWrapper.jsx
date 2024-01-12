@@ -16,7 +16,6 @@ export default function TodoWrapper() {
     return (
         <div className="todo-wrapper">
             <TodoForm addTodo={addTodo} />
-            <h1 className=" text-white font-bold text-[2.2rem] mb-2">Items</h1>
             {todos.map((todo, index) => {
                 return <Todo todo={todo} key={index} isCompleted={isCompleted} />
             })}
